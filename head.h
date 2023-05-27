@@ -42,8 +42,8 @@ void From_max_to_min()
 				tmp = *low;
 				*low = *high;
 				*high = tmp;
-			}/*else if (*high == *low) {			//这个代码貌似会出现问题（相同数排序失效）
-				break;}*/
+			}else if (high == low) {
+				break;}
 		}
 	}
 
@@ -65,8 +65,8 @@ void From_min_to_max()
 				tmp = *low;
 				*low = *high;
 				*high = tmp;
-			}/*else if (*high == *low){
-				break;}*/
+			}else if (high == low) {
+				break;}
 		}
 	}
 
